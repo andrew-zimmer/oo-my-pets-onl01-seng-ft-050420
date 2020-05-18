@@ -50,5 +50,6 @@ class Owner
       self.cats
     end 
   end 
-  binding.pry
 end
+
+binding.pry
