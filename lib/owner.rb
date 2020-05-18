@@ -31,6 +31,7 @@ class Owner
   def cats 
     all_cats = Cat.all.select {|cat| cat.owner == self}
     @cats << all_cats
+    cats
   end
   
   def dogs
