@@ -66,4 +66,9 @@ class Owner
       c.owner = nil
     end 
   end 
+  
+  def list_pets
+    @dogs 
+    @cats
+  end 
 end
