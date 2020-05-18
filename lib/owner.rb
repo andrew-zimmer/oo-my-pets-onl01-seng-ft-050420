@@ -41,12 +41,6 @@ class Owner
   end 
   
   def buy_cat(name)
-    Cat.all.each do |cat| 
-      if cat.name == name
-        cat.owner = self
-        @cats << cat 
-      end 
-    end 
-    @cats.uniq
+    Cat.all.uniq.each {|cat| cat.name == name}
   end
 end
