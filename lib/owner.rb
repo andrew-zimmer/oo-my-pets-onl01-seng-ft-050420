@@ -29,7 +29,9 @@ class Owner
   end 
   
   def cats 
-    Cat.all.select do |cat| cat.owner == self} 
+    array = Cat.all.select do |cat| cat.owner == self} 
+    @cats = array 
+    @cats
   end
   
   def dogs
