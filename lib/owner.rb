@@ -28,17 +28,8 @@ class Owner
     @@all = []
   end 
   
-  def cat 
-    @cats 
-  end 
-  
   def cats 
-    Cat.all.each do |cat| 
-      if cat.owner == self
-        @cats << cat 
-      end 
-    end 
-    self.cat
+    Cat.all.select do |cat| cat.owner == self} 
   end
   
   def dogs
