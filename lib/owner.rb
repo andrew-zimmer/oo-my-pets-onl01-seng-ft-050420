@@ -29,8 +29,8 @@ class Owner
   end 
   
   def cats 
-    Cat.all.select {|cat| cat.owner == self}
-    @cats
+    Cat.all.select {|cat| cat.owner == self} << @cats 
+    @cats.flatten
   end
   
   def dogs
