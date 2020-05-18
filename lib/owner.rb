@@ -44,5 +44,3 @@ class Owner
     Cat.all.select {|cat| cat.name == name}
   end
 end
-
-binding.pry
