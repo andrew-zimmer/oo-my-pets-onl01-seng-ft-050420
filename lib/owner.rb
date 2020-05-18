@@ -48,5 +48,11 @@ class Owner
     @dogs << Dog.new(name,self)
   end 
   
-  
+  def walks_dogs(name)
+    Dog.all.find do |d|
+      if d.name == name 
+        d.mood = "happy"
+      end 
+    end 
+  end 
 end
