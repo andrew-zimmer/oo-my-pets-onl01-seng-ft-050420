@@ -12,7 +12,9 @@ class Cat
   end 
   
   def owner=
-    
+    Owner.all.find do |owner_name|
+      owner_name.cats
+
   end 
   
   def self.all 
