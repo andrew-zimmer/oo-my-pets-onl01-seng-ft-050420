@@ -37,7 +37,7 @@ class Owner
   
   def buy_cat(name)
     Cat.all.find {|cat| cat.name == name}.owner = self
-    @cat << name
+    
     
   end 
 end
