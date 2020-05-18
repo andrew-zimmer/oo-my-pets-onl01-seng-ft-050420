@@ -9,11 +9,8 @@ class Cat
     @owner = owner
     @mood = mood
     @@all << self
-  end 
-  
-  def owner 
-    Owner.cats << self 
-  end 
+    Owner.cats << self
+  end
   
   def self.all 
     @@all 
