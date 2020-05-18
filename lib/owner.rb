@@ -61,7 +61,7 @@ class Owner
       d.mood = "nervous" 
       d.owner = nil
     end 
-    self.cats.each |c| 
+    self.cats.each do |c| 
       c.mood = "nervous" 
       c.owner = ''
     end 
