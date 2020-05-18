@@ -30,7 +30,7 @@ class Owner
   
   def cats 
     @cats << Cat.all.select {|cat| cat.owner == self} 
-    @cats.flatten
+    @cats.flatten.uniq
   end
   
   def dogs
