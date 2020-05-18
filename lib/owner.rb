@@ -30,7 +30,11 @@ class Owner
   
   def cats 
     Cat.all.each do |cat| 
-      cat.owner == self} 
+      if cat.owner == self
+        @cats << cat 
+      end 
+    end 
+    @cats
   end
   
   def dogs
