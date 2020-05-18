@@ -29,7 +29,7 @@ class Owner
   end 
   
   def cats 
-    array = Cat.all.select do |cat| cat.owner == self} 
+    array = Cat.all.select {|cat| cat.owner == self} 
     @cats = array 
     @cats
   end
