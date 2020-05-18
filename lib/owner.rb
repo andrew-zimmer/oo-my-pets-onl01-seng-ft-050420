@@ -49,6 +49,7 @@ class Owner
       find.owner = self 
       self.cats
     end 
+    binding.pry
   end 
 end
 
