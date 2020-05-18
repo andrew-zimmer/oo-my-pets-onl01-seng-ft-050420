@@ -47,6 +47,6 @@ class Owner
         @cats << cat 
       end 
     end 
-    
+    @cats.uniq
   end
 end
