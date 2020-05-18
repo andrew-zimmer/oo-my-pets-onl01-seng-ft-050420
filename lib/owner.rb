@@ -41,6 +41,6 @@ class Owner
   end 
   
   def buy_cat(name)
-    Cat.all.uniq.each {|cat| cat.name == name}
+    @cats << Cat.new(name,self)
   end
 end
