@@ -41,11 +41,11 @@ class Owner
   def buy_cat(name)
     find = Cat.all.find {|cat| cat.name == name}
     if find.nil?
-      Cat.new(name, self)
-      @cats << name 
+      new_cat = Cat.new(name, self)
+      self.cats 
     else 
       find.owner = self 
-      @cats << name
+      self.cats
     end 
   end 
 end
